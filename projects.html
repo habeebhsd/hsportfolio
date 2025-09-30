@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Page-specific background correction */
+    body {
+      background: radial-gradient(900px 380px at 50% -10%, rgba(34, 211, 238, .06), transparent), var(--bg);
+    }
+
+    .section {
+      background: radial-gradient(900px 380px at 90% 0%, rgba(34, 211, 238, .05), transparent), var(--bg);
+    }
+
+    /* Styled title */
+    .projects-title {
+      text-align: center;
+      font-size: 36px;
+      line-height: 1.15;
+      margin: 6px 0 10px;
+      letter-spacing: .2px;
+    }
+
+    .projects-title .accent {
+      color: var(--accent);
+    }
+
+    .projects-title::after {
+      content: "";
+      display: block;
+      width: 84px;
+      height: 3px;
+      margin: 10px auto 0;
+      background: linear-gradient(90deg, var(--accent), rgba(34, 211, 238, .0));
+      border-radius: 999px;
+    }
+
+    @media (max-width: 900px) {
+      .projects-title {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .projects-title {
+        font-size: 26px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      body {
+        background: radial-gradient(600px 300px at 50% -6%, rgba(34, 211, 238, .06), transparent), var(--bg);
+      }
+
+      .section {
+        background: radial-gradient(600px 300px at 50% 0%, rgba(34, 211, 238, .04), transparent), var(--bg);
+      }
+    }
+
+    @media (max-width: 560px) {
+      body {
+        background: var(--bg);
+      }
+
+      .section {
+        background: var(--bg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="/image/Name-logo.png"
+          alt="Habeeb Uddin" class="logo-img">
+        
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="projects-title">All <span class="accent">Projects</span></h1>
+        <p class="lead" style="text-align:center; margin: 6px 0 10px;">A collection of projects showcasing my work
+          across the web.</p>
+        <div class="filters" style="justify-content:center; margin-bottom: 16px;">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="frontend">Frontend</button>
+          <button class="chip" data-filter="design">Design</button>
+          <button class="chip" data-filter="tools">Tools</button>
+        </div>
+
+        <div class="cards three" id="projectsGrid">
+          <!-- Smile It's a Sunnah -->
+          <article class="card project proj-card" data-tags="frontend">
+            <div class="work-thumb">
+              <a href="https://smileitsasunnah.com/"> <img src="/image/Smile It's a Sunnah.png"
+                  alt="Smile It's a Sunnah">
+              </a> <span class="chip lite">eCommerce</span>
+            </div>
+            <h3>Smile It's a Sunnah</h3>
+            <p>Islamic eCommerce website built with WordPress, Elementor, ShopEngine, and WooCommerce. Features custom
+              layouts and seamless checkout.</p>
+            <div class="pills"><span class="pill">WordPress</span><span class="pill">Elementor</span><span
+                class="pill">WooCommerce</span><span class="pill">CSS</span></div>
+            <div class="work-footer"><a class="btn wide" href="https://smileitsasunnah.com/" target="_blank">🔗 View
+                Live</a></div>
+          </article>
+
+          <!-- HRACPA -->
+          <article class="card project proj-card" data-tags="frontend">
+            <div class="work-thumb">
+              <a href="https://hracpa.org/"> <img src="/image/HRACPA.png" alt="HRACPA"></a>
+              <span class="chip lite">Business</span>
+            </div>
+            <h3>HRACPA</h3>
+            <p>Accounting & Tax services site designed in WordPress using Beaver Builder, based on Figma reference.
+              Clean and modern design.</p>
+            <div class="pills"><span class="pill">WordPress</span><span class="pill">Beaver Builder</span><span
+                class="pill">Figma</span><span class="pill">CSS</span></div>
+            <div class="work-footer"><a class="btn wide" href="https://hracpa.org/" target="_blank">🔗 View Live</a>
+            </div>
+          </article>
+
+          <!-- Anglia Property Solutions -->
+          <article class="card project proj-card" data-tags="frontend">
+            <div class="work-thumb">
+              <a href="https://www.angliapropertysolutions.com/"> <img src="/image/angliapropertysolutions.png"
+                  alt="Anglia Property Solutions"></a>
+              <span class="chip lite">Services</span>
+            </div>
+            <h3>Anglia Property Solutions</h3>
+            <p>Modern property maintenance website showcasing cleaning and maintenance services. Built with WordPress
+              and Elementor.</p>
+            <div class="pills"><span class="pill">WordPress</span><span class="pill">Elementor</span><span
+                class="pill">CSS</span><span class="pill">Responsive Design</span></div>
+            <div class="work-footer"><a class="btn wide" href="https://www.angliapropertysolutions.com/"
+                target="_blank">🔗 View Live</a></div>
+          </article>
+
+          <!-- Briah.ai -->
+          <article class="card project proj-card" data-tags="frontend">
+            <div class="work-thumb">
+              <a href="https://briah.ai/"> <img src="/image/briah.ai (2).png" alt="Briah.ai"></a>
+              <span class="chip lite">AI / Health</span>
+            </div>
+            <h3>Briah.ai</h3>
+            <p>AI-powered video-based health platform that measures vital signs in real-time using rPPG technology.</p>
+            <div class="pills"><span class="pill">AI</span><span class="pill">Healthcare</span><span
+                class="pill">Data</span><span class="pill">Responsive Design</span></div>
+            <div class="work-footer"><a class="btn wide" href="https://briah.ai/" target="_blank">🔗 View Live</a></div>
+          </article>
+
+          <!-- Global Finance Talent -->
+          <article class="card project proj-card" data-tags="frontend">
+            <div class="work-thumb">
+              <a href="https://globalfinancetalent.com/"><img src="/image/Global Finance Talent.png"
+                  alt="Global Finance Talent"></a>
+              <span class="chip lite">Business / Jobs</span>
+            </div>
+            <h3>Global Finance Talent</h3>
+            <p>Recruitment platform connecting finance professionals with global employers. Specialized in finance
+              talent acquisition.</p>
+            <div class="pills"><span class="pill">WordPress</span><span class="pill">Job Portal</span><span
+                class="pill">Recruitment</span></div>
+            <div class="work-footer"><a class="btn wide" href="https://globalfinancetalent.com/" target="_blank">🔗 View
+                Live</a></div>
+          </article>
+
+          <!-- 3D Vision Services -->
+          <article class="card project proj-card" data-tags="frontend">
+            <div class="work-thumb">
+              <a href="https://3dvisionservices.com/"> <img src="/image/3dvision.png" alt="3D Vision Services"></a>
+              <span class="chip lite">Portfolio</span>
+            </div>
+            <h3>3D Vision Services</h3>
+            <p>Professional 3D modeling and visualization services for industries such as architecture and engineering.
+            </p>
+            <div class="pills"><span class="pill">3D</span><span class="pill">Design</span><span
+                class="pill">Visualization</span><span class="pill">Portfolio</span></div>
+            <div class="work-footer"><a class="btn wide" href="https://3dvisionservices.com/" target="_blank">🔗 View
+                Live</a></div>
+          </article>
+
+          <!-- Teddy Bear Plus -->
+          <article class="card project proj-card" data-tags="frontend">
+            <div class="work-thumb">
+              <a href="https://teddybearpls.com/"> <img src="/image/Teddy.png" alt="Teddy Bear Plus"></a>
+              <span class="chip lite">eCommerce</span>
+            </div>
+            <h3>Teddy Bear Plus</h3>
+            <p>Fun online store dedicated to teddy bears and plush toys, offering seamless shopping with WooCommerce.
+            </p>
+            <div class="pills"><span class="pill">WordPress</span><span class="pill">WooCommerce</span><span
+                class="pill">ShopEngine</span></div>
+            <div class="work-footer"><a class="btn wide" href="https://teddybearpls.com/" target="_blank">🔗 View
+                Live</a></div>
+          </article>
+
+          <!-- Alpha Sports & Fitness -->
+          <article class="card project proj-card" data-tags="frontend">
+            <div class="work-thumb">
+              <a href="https://alphasportsandfitness.com/"> <img src="/image/Alpha.png"
+                  alt="Alpha Sports & Fitness"></a>
+              <span class="chip lite">Services</span>
+            </div>
+            <h3>Alpha Sports & Fitness</h3>
+            <p>Sports and fitness website showcasing training programs, services, and fitness products.</p>
+            <div class="pills"><span class="pill">WordPress</span><span class="pill">Elementor</span><span
+                class="pill">Fitness</span></div>
+            <div class="work-footer"><a class="btn wide" href="https://alphasportsandfitness.com/" target="_blank">🔗
+                View Live</a></div>
+          </article>
+
+          <!-- SVIL Inconnect -->
+          <article class="card project proj-card" data-tags="frontend">
+            <div class="work-thumb">
+              <a href="https://svil.inconnect.it/"><img src="/image/anica.png" alt="SVIL Inconnect"></a>
+              <span class="chip lite">Business</span>
+            </div>
+            <h3>SVIL Inconnect</h3>
+            <p>Corporate business services website showcasing industrial solutions and multiple company projects.</p>
+            <div class="pills"><span class="pill">Business</span><span class="pill">Corporate</span><span
+                class="pill">Services</span></div>
+            <div class="work-footer"><a class="btn wide" href="https://svil.inconnect.it/" target="_blank">🔗 View
+                Live</a></div>
+          </article>
+
+          <!-- Costa Rodrigues -->
+          <article class="card project proj-card" data-tags="frontend">
+            <div class="work-thumb">
+              <a href="https://costa-rodrigues.innovstar.pt/"><img src="/image/TCR.png" alt="Costa Rodrigues"></a>
+              <span class="chip lite">Business / Law</span>
+            </div>
+            <h3>Costa Rodrigues</h3>
+            <p>Professional law and consulting services website, highlighting advisory and corporate services.</p>
+            <div class="pills"><span class="pill">Law</span><span class="pill">Consulting</span><span
+                class="pill">Corporate</span></div>
+            <div class="work-footer"><a class="btn wide" href="https://costa-rodrigues.innovstar.pt/" target="_blank">🔗
+                View Live</a></div>
+          </article>
+        </div>
+
+        <div class="center mt">
+          <a class="btn ghost" href="index.html">← Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Habeeb Uddin | All Rights Reserved</p>
+    </div>
+  </footer>
+  <style>
+    .section {
+      padding: 73px 0 55px 0;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+  <script src="script.js"></script>
+</body>
+
+</html>
